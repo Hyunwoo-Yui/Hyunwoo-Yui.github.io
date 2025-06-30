@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -26,17 +25,15 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   
   <style>
-    /* 지도 컨테이너를 위한 CSS. 이 부분은 style.css에 넣어도 됩니다. */
+    /* 아 개개힘들다 */
     #map { 
         width: 100%; 
         height: 350px; 
-        border: 1px solid #ccc; /* 지도가 잘 보이도록 테두리 추가 (선택 사항) */
-        margin-top: 15px; /* 위쪽 여백 (선택 사항) */
+        border: 1px solid #ccc;
+        margin-top: 15px;
     } 
   </style>
-
 </head>
-
 <body>
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
@@ -44,15 +41,11 @@
       <span class="typed" data-typed-items=" 우리 결혼합니다!, 私たち、結婚します！, We're getting married!"></span></p>
     </div>
   </section><main id="main">
-
     <section id="about" class="about">
       <div class="container">
-
         <div class="section-title">
           <h2>일정/장소 같은거 공간</h2>
-          
         </div>
-
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
             <img src="assets/img/ningen.jpeg" class="img-fluid" alt="">
@@ -77,27 +70,58 @@
             </div>
           </div>
         </div>
-
       </div>
     </section><section id="resume" class="resume">
       <div class="container">
-
         <div class="section-title">
           <h2>스케줄</h2>
         </div>
-
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title">본식</h3>
             <div class="resume-item">
-              <h4>돈 받는 시간</h4>
-              <h5>09:00 ~ 10:00</h5>
-              <ul><em></em></ul>
+              <h4>식전 안내</h4>
+              <h5>10:30 ~ 10:35</h5>
             </div>
             <div class="resume-item">
-              <h4>사회자 식안내</h4>
-              <h5>10:00 ~ 10:10</h5>
-              <ul><em></em></ul>
+              <h4>개식 선언</h4>
+              <h5>10:35 ~ 10:40</h5>
+            </div>
+            <div class="resume-item">
+              <h4>양가 어머님 입장 / 화촉점</h4>
+              <h5>10:40 ~ 10:45</h5>
+            </div>
+            <div class="resume-item">
+              <h4>신랑 입장</h4>
+              <h5>10:45 ~ 10:48</h5>
+            </div>
+            <div class="resume-item">
+              <h4>신부 입장</h4>
+              <h5>10:48 ~ 10:53</h5>
+            </div>
+            <div class="resume-item">
+              <h4>신랑, 신부 맞절</h4>
+              <h5>10:53 ~ 10:58</h5>
+            </div>
+            <div class="resume-item">
+              <h4>혼인 서약</h4>
+              <h5>10:58 ~ 11:05</h5>
+            </div>
+            <div class="resume-item">
+              <h4>교장 선생님 말</h4>
+              <h5>11:05 ~ 11:15</h5>
+            </div>
+            <div class="resume-item">
+              <h4>양가 부모님 / 내빈께 인사</h4>
+              <h5>11:15 ~ 11:20</h5>
+            </div>
+            <div class="resume-item">
+              <h4>신랑, 신부 행진</h4>
+              <h5>11:20 ~ 11:23</h5>
+            </div>
+            <div class="resume-item">
+              <h4>사진 촬영</h4>
+              <h5>11:23 ~ 11:40</h5>
             </div>
           </div>
     </div>
@@ -109,10 +133,7 @@
         <div class="section-title">
           <h2>사진첩</h2>
         </div>
-
-
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅊㅊ-1.png" class="img-fluid" alt="pf1" height="600" width="450">
@@ -121,8 +142,6 @@
               </div>
             </div>
           </div>
-
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅌㅌ.png" class="img-fluid" alt="pf2" height="600" width="450">
@@ -131,7 +150,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅇㅇ.png" class="img-fluid" alt="pf2" height="600" width="450">
@@ -140,7 +158,6 @@
               </div>
             </div>
           </div>    
-          
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅇㅇ.png" class="img-fluid" alt="pf3" >
@@ -149,8 +166,6 @@
               </div>
             </div>
           </div>
-
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅇㅇ.png" class="img-fluid" alt="emnist">
@@ -159,7 +174,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅇㅇ.png" class="img-fluid" alt="emnist">
@@ -168,8 +182,6 @@
               </div>
             </div>
           </div>
-
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㅂㅂo0.png" class="img-fluid" alt="pf4">
@@ -178,9 +190,6 @@
               </div>
             </div>
           </div>
-
-
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ㄷㄷ.png" class="img-fluid" alt="">
@@ -189,8 +198,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section></main><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
