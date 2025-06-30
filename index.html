@@ -22,13 +22,12 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-  
   <style>
     /* 아 개개힘들다 */
-    #map { 
-        width: 100%; 
-        height: 350px; 
+    /* Kakao Maps uses its own styling, so you might adjust this or remove if default styling is sufficient */
+    #daumRoughmapContainer1751327663874 {
+        width: 100%;
+        height: 350px; /* Adjust height to match your original map height */
         border: 1px solid #ccc;
         margin-top: 15px;
     } 
@@ -55,7 +54,7 @@
             <p class="">
         <br> 내용 <br />
       </p>
-        <p class="">
+            <p class="">
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -63,9 +62,9 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>예식장:</strong> <span>웨딩홀 홀명 </span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>일시:</strong> <span>일시 </span></li>
                   <li>
-                    <div id="map"></div>
+                    <div id="daumRoughmapContainer1751327663874" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                   </li>
-                  </ul>
+                </ul>
               </div>
             </div>
           </div>
@@ -214,25 +213,14 @@
 
   <script src="assets/js/main.js"></script>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script>
-    // 지도를 초기화합니다. 'map'은 지도가 들어갈 div의 ID입니다.
-    // 37.5665, 126.9780은 서울 시청의 위도/경도입니다. 원하는 위치로 변경하세요.
-    var map = L.map('map').setView([37.51585295585606, 126.72249928526045], 15); // [위도, 경도], 줌 레벨
-
-    // OpenStreetMap 타일 레이어를 추가합니다.
-    // 지도 출처 표기 (Attribution)는 필수입니다.
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-    }).addTo(map);
-
-    // 마커를 추가합니다. 
-    // 마커의 위치도 원하는 장소의 위도/경도로 변경하세요.
-    // 여기서는 지도 중심과 같은 위치에 마커를 찍도록 설정했습니다.
-    var marker = L.marker([37.51585295585606, 126.72249928526045]).addTo(map)
-        // 마커 클릭 시 팝업 메시지 표시 (선택 사항)
-        .bindPopup('웨스턴웨딩홀'); 
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp" : "1751327663874",
+      "key" : "4hzcpryjmdz",
+      "mapWidth" : "100%", // Set to 100% to fit the container
+      "mapHeight" : "350" // Match the height you had for OpenStreetMap
+    }).render();
   </script>
 
 </body>
