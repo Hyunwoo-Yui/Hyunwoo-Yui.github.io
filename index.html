@@ -69,7 +69,21 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>예식장:</strong> <span>웨딩홀 홀명 </span></li>
 		  <li><i class="bi bi-chevron-right"></i> <strong>일시:</strong> <span>일시 </span></li>
-		  <li>이쪽에 카카오나 네이버지도로 웨딩홀 표시</li>
+		  <div id="map" style="width:100%;height:350px;"></div>
+		  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+		  <script>
+		  var mapOptions = {        
+	          center: new naver.maps.LatLng(37.5665, 126.9780), // 지도의 중심 좌표 (예: 서울 시청)
+                  zoom: 15 // 지도 확대 레벨
+                  };
+
+		  var map = new naver.maps.Map('map', mapOptions);
+
+		  var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.5665, 126.9780), // 마커 좌표
+			map: map
+		  }
+		  </script>
                 </ul>
               </div>
             </div>
